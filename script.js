@@ -56,30 +56,13 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-// progress-bar animation
-
-var delay = 500;
-$(".progress-bar").each(function(i){
-    $(this).delay( delay*i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
-
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: delay,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now)+'%');
-        }
-    });
-});
-
 // active li
 
-$( '.resume-li' ).click(
-function() {
-  $('.resume-li').removeClass('active');
-  $(this).addClass('active');
-},
+$(document).ready(function(){
+  $('.resume-li').click(function(){
+    $('.resume-li').removeClass("active");
+    $(this).addClass("active");
+}),
 
 //   Click reveal for Education
 $('.edu').click(
@@ -94,6 +77,23 @@ $('.ski').click(
   function() {
     $('#education, #certification, #more').hide();
     $('#skills').show();
+
+    // progress-bar animation
+    
+    var delay = 500;
+    $(".progress-bar").each(function(i){
+        $(this).delay( delay*i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
+
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: delay,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now)+'%');
+            }
+        });
+    });
   }
 ),
 
@@ -112,4 +112,4 @@ $('.more').click(
     $('#more').show();
   }
 )
-);
+});
