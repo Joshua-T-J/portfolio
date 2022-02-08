@@ -328,13 +328,10 @@ footer{
     display: none;
 }
 
-.progress-bar{
-    background-color: #FF014F;
+#html-progress, #css-progress, #js-progress{
+    background-color: #ec0147d8;
 }
 
-.progress-bar::-moz-progress-bar { background: #FF014F; }
-.progress-bar::-webkit-progress-value { background: #FF014F; }
-.progress-bar { color: #FF014F; }
 
 
 /* .up-arrow{
