@@ -96,7 +96,7 @@
             </div>
             <div class="col-md-4 col-12 image-jtj">
               <!-- <div class="img-fluid">
-                <img src="./jtj.png" alt="photo">
+                <img src="./JTJ1.jpg" alt="photo">
               </div> -->
             </div>
         </div>
@@ -144,7 +144,7 @@
           <div class="col-md-4 card-main">
             <a href="https://dic-project.github.io/DIC-FRONT_END/index.html">
               <div class="cards-pro">
-                <img class="img-fluid img-thumbnail" src="./JTJ1.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="./Images/hsu.webp" alt="">
                 <p class="prj-name">WEB-APPLICATION</p>
                 <h5 class="card-elements projects-h5">HSU WAGE CALCULATOR <span id="goto"><i class="fas fa-external-link-alt"></i></span> </h5>
                 <p class="card-elements"></p>
@@ -155,7 +155,7 @@
           <div class="col-md-4 card-main">
             <a href="https://joshua-t-j.github.io/ocym-website/">
               <div class="cards-pro">
-                <img class="img-fluid img-thumbnail" src="./JTJ1.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="./Images/ocym.webp" alt="">
                 <p class="prj-name">STATIC WEBSITE</p>
                 <h5 class="card-elements projects-h5">OCYM WEBSITE <span id="goto"><i class="fas fa-external-link-alt"></i></span></h5>
                 <p class="card-elements"></p>
@@ -166,7 +166,7 @@
           <div class="col-md-4 card-main">
             <a href="https://joshua-t-j.github.io/todoapp/">
               <div class="cards-pro">
-                <img class="img-fluid img-thumbnail" src="./JTJ1.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="./Images/Todo.webp" alt="">
                 <p class="prj-name">REACT APP</p>
                 <h5 class="card-elements projects-h5">TODO APP<span id="goto"><i class="fas fa-external-link-alt"></i></span></h5>
                 <p class="card-elements"></p>
@@ -351,7 +351,7 @@
                               <div class="controls">
                                   <div class="row">
                                       <div class="col-md-6">
-                                          <div class="form-group"> <label for="form_name">Name</label> <input id="form_name" minlength="3" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"> </div>
+                                          <div class="form-group"> <label for="form_name">Name</label> <input id="form_name" minlength="3" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"> </div>
                                       </div>
                                       <div class="col-md-6">
                                           <div class="form-group"> <label for="form_lastname">Phone No</label> <input id="form_lastname"  type="tel" name="surname" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Lastname is required." > </div>
@@ -373,7 +373,6 @@
                                   </div>
                               </div>
                           </form>
-                      
                   </div>
               </div> <!-- /.8 -->
           </div> <!-- /.row-->
@@ -386,9 +385,9 @@
       <p>&copy; 2022.All rights reserved by Joshua TJ</p>
     </footer>
 
-    <!-- <div class="up-arrow">
+    <div class="up-arrow" id="goto-top">
       <a href="#home"><button class="btn"><i class="fas fa-arrow-up"></i></button></a>
-    </div> -->
+    </div>
     
  <!-- bootstrap javascript -->
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -404,5 +403,29 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="./script.js"></script>
+
+  <!-- contact form script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <script>
+    $("#contact-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbyiKZHZFjZqnStPsv6KY-NlLlnLn5tPhCH8hfoq3MDfvP5ReEOLDcqN0368X7mUIkyS/exec",
+            data:$("#contact-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Message Send Successfully! Thankyou For Your Feedback")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("An Error Occured")
+
+            }
+        })
+    })
+  </script>
+
 </body>
 </html>
