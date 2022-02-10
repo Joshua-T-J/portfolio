@@ -52,7 +52,7 @@ header{
     margin: 5px 5px;
 }
 
-.nav-joshua li:hover{
+.nav-joshua .nav-btns:hover{
     border-radius: 7px;
     background: var(--bg-color);
     box-shadow:  var(--shadow);
@@ -78,14 +78,9 @@ header{
     justify-content: flex-end;
   }
 
-  .day{
-      font-size: 20px;
-      color: rgb(255, 187, 0);
-  }
-
   .night{
     font-size: 20px;
-    color: #6a8ab3;
+    color: var(--font-color);
 }
 
   #theme-text{
@@ -97,6 +92,7 @@ header{
     height: 24px;
     position: relative;
     width: 40px;
+    margin-bottom: 0;
   }
   
   .theme-switch input {
@@ -116,7 +112,7 @@ header{
   
   .slider:before {
     background-color: #FF014F;
-    bottom: 4px;
+    bottom: 3px;
     content: "";
     height: 16px;
     left: 4px;
