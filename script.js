@@ -130,3 +130,46 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+// contact form script
+
+$("#contact-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbyiKZHZFjZqnStPsv6KY-NlLlnLn5tPhCH8hfoq3MDfvP5ReEOLDcqN0368X7mUIkyS/exec",
+            data:$("#contact-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Message Send Successfully! Thankyou For Your Feedback")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+        error:function (err){
+        alert("An Error Occured")
+
+        }
+    })
+});
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);

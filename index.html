@@ -19,12 +19,12 @@
     <header class="container-fluid">
 
         <div class="row top">
-            <div class="col-md-4 col-6">
+            <div class="col-md-2 col-5">
                 <h2>Portfolio</h2>
                 <!-- <img src="" alt="OCYM Pandithitta" style="height: 60px;"> -->
             </div>
 
-            <div class="col-md-8 col-6 my-auto top-bar">
+            <div class="col-md-10 col-7 my-auto top-bar">
                 <nav class="navbar navbar-expand-lg navbar-light">
                   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
                     <span class="navbar-toggler-icon"></span>
@@ -32,23 +32,36 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav ml-auto nav-joshua">
                         <li class="nav-item  ml-auto">
-                          <a class="nav-link " href="#home" style="color: #5f5f5f;">HOME </a>
+                          <a class="nav-link" href="#home">HOME </a>
                         </li>
                         <li class="nav-item ml-auto">
-                          <a class="nav-link" href="#features" style="color: #5f5f5f;">FEATURES</a>
+                          <a class="nav-link" href="#features">FEATURES</a>
                         </li>
                         <li class="nav-item ml-auto">
-                          <a class="nav-link" href="#projects" style="color: #5f5f5f;">PROJECTS</a>
+                          <a class="nav-link" href="#projects">PROJECTS</a>
                         </li>
                         <li class="nav-item ml-auto">
-                          <a class="nav-link" href="#resume" style="color: #5f5f5f;">RESUME</a>
+                          <a class="nav-link" href="#resume">RESUME</a>
                         </li>
                         <li class="nav-item ml-auto">
-                          <a class="nav-link" href="#contact_form" style="color: #5f5f5f;">CONTACT</a>
+                          <a class="nav-link" href="#contact_form">CONTACT</a>
                         </li>
                         <li class="nav-item ml-auto">
-                            <a class="nav-link" href="#follow" style="color: #5f5f5f;">FOLLOW</a>
+                            <a class="nav-link" href="#follow">FOLLOW</a>
                         </li>
+                        <!-- theme-switch button -->
+
+                        <li class="nav-item ml-auto p-2">
+                          <div class="theme-switch-wrapper">
+                            <span class="day"><i class="fa-solid fa-sun"></i> &nbsp;</span>
+                            <label class="theme-switch" for="checkbox">
+                              <input type="checkbox" id="checkbox" />
+                              <div class="slider round"></div>
+                            </label>
+                            <span class="night"> &nbsp;<i class="fa-solid fa-cloud-moon"></i></span>
+                          </div>
+                        </li>
+
                       </ul>
                     </div>
                   </nav>
@@ -98,7 +111,7 @@
               <!-- <div class="img-fluid">
                 <img src="./JTJ1.jpg" alt="photo">
               </div> -->
-            </div>
+           </div>
         </div>
       </div>
     </section>
@@ -351,25 +364,25 @@
                               <div class="controls">
                                   <div class="row">
                                       <div class="col-md-6">
-                                          <div class="form-group"> <label for="form_name">Name</label> <input id="form_name" minlength="3" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"> </div>
+                                          <div class="form-group"> <label for="Name">Name</label> <input id="form_name" minlength="3" type="text" name="Name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"> </div>
                                       </div>
                                       <div class="col-md-6">
-                                          <div class="form-group"> <label for="form_lastname">Phone No</label> <input id="form_lastname"  type="tel" name="surname" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Lastname is required." > </div>
+                                          <div class="form-group"> <label for="Mobile">Phone No</label> <input id="form_lastname"  type="tel" name="Mobile" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Lastname is required." > </div>
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="col-md-6">
-                                          <div class="form-group"> <label for="form_email">Email</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
+                                          <div class="form-group"> <label for="Email">Email</label> <input id="form_email" type="email" name="Email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
                                       </div>
                                       <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_subject">Subject</label> <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Please specify the subject *" required="required"> </div>
+                                        <div class="form-group"> <label for="Subject">Subject</label> <input id="form_subject" type="text" name="Subject" class="form-control" placeholder="Please specify the subject *" required="required"> </div>
                                     </div>
                                   </div>
                                   <div class="row">
                                       <div class="col-md-12">
-                                          <div class="form-group"> <label for="form_message">Message</label> <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here *" rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                          <div class="form-group"> <label for="form_message">Message</label> <textarea id="form_message" name="Message" class="form-control" placeholder="Write your message here *" rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
                                       </div>
-                                      <div class="col-md-12"> <input type="submit" class="btn btn-send pt-2 btn-block " value="Send Message"></div>
+                                      <div class="col-md-12" style="margin-top: 10px;"> <input type="submit" class="btn btn-send pt-2 btn-block " value="Send Message"></div>
                                   </div>
                               </div>
                           </form>
@@ -406,26 +419,6 @@
 
   <!-- contact form script -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-  <script>
-    $("#contact-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbyiKZHZFjZqnStPsv6KY-NlLlnLn5tPhCH8hfoq3MDfvP5ReEOLDcqN0368X7mUIkyS/exec",
-            data:$("#contact-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Message Send Successfully! Thankyou For Your Feedback")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("An Error Occured")
-
-            }
-        })
-    })
-  </script>
 
 </body>
 </html>
