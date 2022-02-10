@@ -29,7 +29,7 @@ header{
     position: fixed;
     background-color: var(--bg-body);
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .top{    
@@ -66,6 +66,15 @@ header{
     color: var(--font-color);
 }
 
+.ham-icon{
+    font-size: 30px;
+    color: var(--font-color);
+}
+
+.navbar-toggler{
+    border: 1px solid var(--font-color);
+}
+
 /* slider css */
 
 .toggle-theme{
@@ -91,7 +100,7 @@ header{
     display: inline-block;
     height: 24px;
     position: relative;
-    width: 40px;
+    width: 45px;
     margin-bottom: 0;
   }
   
@@ -100,7 +109,7 @@ header{
   }
 
 .slider {
-    border: 1px solid #FF014F;
+    border: 2px solid var(--font-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -112,7 +121,7 @@ header{
   
   .slider:before {
     background-color: #FF014F;
-    bottom: 3px;
+    bottom: 2px;
     content: "";
     height: 16px;
     left: 4px;
@@ -121,10 +130,10 @@ header{
     width: 16px;
   }
   
-  input:checked + .slider {
-    background-color: #ff014d8e;
+  /* input:checked + .slider {
+    background-color: var(--font-color);
   }
-  
+   */
   input:checked + .slider:before {
     transform: translateX(16px);
   }
@@ -458,7 +467,7 @@ footer{
     bottom: 40px;
     right: 30px;
     border-radius: 30px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .up-arrow .btn{
