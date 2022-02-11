@@ -100,7 +100,7 @@ header{
     display: inline-block;
     height: 24px;
     position: relative;
-    width: 45px;
+    width: 44px;
     margin-bottom: 0;
   }
   
@@ -490,4 +490,39 @@ footer{
 
 .up-arrow .btn:hover i{
     color: #dde3e7;
+}
+
+.side-bar{
+    position: fixed;
+    top: 40vh;
+    left: 0;
+    background-color: var(--backgroung-color);
+    border-radius: 10px;
+    box-shadow:  var(--shadow);
+}
+
+.side-bar-icon{
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--backgroung-color);
+}
+
+.side-bar .social-bar{
+    display: none;
+}
+
+.side-bar .side-bar-icon:hover a{
+    color: #FF014F;
+}
+
+.side-bar-icon a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.toggle-side{
+    color: var(--font-color);
+    padding: 10px;
+    cursor: pointer;
 }

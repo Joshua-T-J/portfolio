@@ -119,15 +119,18 @@ $('.more').click(
 // scroll to top button
 //Get the button
 var mybutton = document.getElementById("goto-top");
+var sidediv = document.getElementById("side-bar")
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
     mybutton.style.display = "block";
+    sidediv.style.display = "block"
   } else {
     mybutton.style.display = "none";
+    sidediv.style.display = "none";
   }
 }
 
@@ -173,3 +176,17 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+// side socialbar toggele
+$(document).ready(function(){
+  $("#show-sidebar").click(()=>{
+    $("#icon-side").show(),
+    $("#show-sidebar").hide()
+  });
+
+  $("#hide-sidebar").click(()=>{
+    $("#icon-side").hide(),
+    $("#show-sidebar").show()
+  });
+})
