@@ -456,10 +456,18 @@ footer{
     outline: none;
 }
 
-footer{
+footer .footer p{
     color: var(--font-color);
 }
 
+.footer-icons{
+    color: var(--font-color);
+    padding: 15px;
+}
+
+.footer-icons:hover{
+    color: #FF014F;
+}
 
 .up-arrow{
     display: none;
@@ -496,9 +504,10 @@ footer{
     position: fixed;
     top: 40vh;
     left: 0;
-    background-color: var(--backgroung-color);
+    background-color: var(--bg-body);
     border-radius: 10px;
     box-shadow:  var(--shadow);
+    display: none;
 }
 
 .side-bar-icon{
@@ -507,15 +516,15 @@ footer{
     background-color: var(--backgroung-color);
 }
 
-.side-bar .social-bar{
+.side-bar #show-sidebar{
     display: none;
 }
 
-.side-bar .side-bar-icon:hover a{
+.side-bar a:hover{
     color: #FF014F;
 }
 
-.side-bar-icon a{
+.side-bar a{
     color: var(--font-color);
     text-decoration: none;
     font-size: 20px;
@@ -525,4 +534,8 @@ footer{
     color: var(--font-color);
     padding: 10px;
     cursor: pointer;
+}
+
+.toggle-side:hover{
+    color: #FF014F;
 }
