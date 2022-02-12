@@ -22,6 +22,7 @@
     padding: 0;    
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
  
@@ -157,6 +158,11 @@ header{
     margin-top: 50px;
 }
 
+.home-content h1{
+    margin: 0;
+    padding: 0;
+}
+
 .home-content h2 span{
     text-decoration: none;
     color: #01a2ff;
@@ -202,7 +208,7 @@ header{
     cursor: pointer;
 }
 
-.home-icon .fab:hover{    
+.home-icon .social .fab:hover{    
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.2s;
@@ -284,7 +290,7 @@ header{
 }
 
 .container h1{
-    padding: 10px;
+    padding-bottom: 10px;
     text-align: center;
     color: var(--font-color);
     font-weight: 600;
@@ -456,6 +462,10 @@ footer{
     outline: none;
 }
 
+#contact-form label{
+    color: var(--font-color);
+}
+
 footer .footer p{
     color: var(--font-color);
 }
@@ -468,6 +478,8 @@ footer .footer p{
 .footer-icons:hover{
     color: #FF014F;
 }
+
+/* goto top arrow */
 
 .up-arrow{
     display: none;
