@@ -143,8 +143,12 @@ $("#contact-form").submit((e)=>{
             data:$("#contact-form").serialize(),
             method:"post",
             success:function (response){
-                alert("Message Send Successfully! Thankyou For Your Feedback")
-                window.location.reload()
+              $('#message-popup').css('display','flex')
+              $('#reload').click(()=>{
+                window.location.reload();
+              });
+                // alert("Message Send Successfully! Thankyou For Your Feedback")
+                // window.location.reload()
                 //window.location.href="https://google.com"
             },
         error:function (err){
