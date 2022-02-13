@@ -617,3 +617,9 @@ footer .footer p{
     color: #fff;
     background: #ff014dc2;
 }
+
+@media (max-width : 691px){
+    .inner-popup{
+        width: 90%;
+    }
+}
