@@ -1,4 +1,4 @@
-//  typewritting letters in name
+//  typewriting letters in name
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -142,6 +142,10 @@ $("#contact-form").submit((e)=>{
             url:"https://script.google.com/macros/s/AKfycbyiKZHZFjZqnStPsv6KY-NlLlnLn5tPhCH8hfoq3MDfvP5ReEOLDcqN0368X7mUIkyS/exec",
             data:$("#contact-form").serialize(),
             method:"post",
+            beforeSend: function(){
+              // Show image container
+              $("#loading-wrapper").css("display","flex");
+             },
             success:function (response){
               $('#message-popup').css('display','flex')
               $('#reload').click(()=>{
@@ -151,8 +155,12 @@ $("#contact-form").submit((e)=>{
                 // window.location.reload()
                 //window.location.href="https://google.com"
             },
+            complete:function(data){
+              // Hide image container
+              $("#loading-wrapper").hide();
+             },
         error:function (err){
-        alert("An Error Occured")
+        alert("An Error Occurred")
 
         }
     })
@@ -182,7 +190,7 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 
-// side socialbar toggele
+// side social-bar toggele
 $(document).ready(function(){
   $("#show-sidebar").click(()=>{
     $("#icon-side").show(),
