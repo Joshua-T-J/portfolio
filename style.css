@@ -241,10 +241,10 @@ header{
     background: var(--bg-body);
     box-shadow:  var(--shadow);
     color: var(--font-color);    
-    -webkit-transition: background-color .3s ease;
-    -moz-transition: background-color .3s ease;
-    -o-transition: background-color .3s ease;
-    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
 }
 
 .cards:hover{
@@ -334,7 +334,7 @@ header{
     box-shadow:  var(--shadow);
 }
 
-.cards-pro img:hover{
+.cards-pro:hover img{
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.2s;
@@ -358,7 +358,7 @@ header{
 
 .cards-pro h5:hover{
     color: #FF014F;
-    transform: scale(1.06);
+    transform: scale(1);
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -366,6 +366,7 @@ header{
 
 .cards-pro #goto{
     display: none;
+    font-size: 18px;
 }
 
 .cards-pro h5:hover #goto{
@@ -415,6 +416,10 @@ footer{
     background: var(--background-color);
     box-shadow:  var(--shadow);
     border-radius: 10px;
+}
+
+.resume-card:hover{
+    background: var(--cards-hover-bg);
 }
 
 .resume-card p:nth-child(1){
@@ -520,8 +525,8 @@ footer{
   
   #loading-content {
     border: 3px solid transparent;
-    border-top-color: #4D658D;
-    border-bottom-color: #4D658D;
+    border-top-color: #0077ff;
+    border-bottom-color: #0077ff;
     border-radius: 50%;
     -webkit-animation: loader 2s linear infinite;
     -moz-animation: loader 2s linear infinite;
@@ -531,23 +536,23 @@ footer{
   
   #loading-content:before {
     border: 3px solid transparent;
-    border-top-color: #D4CC6A;
-    border-bottom-color: #D4CC6A;
+    border-top-color: #00aeff;
+    border-bottom-color: #00aeff;
     border-radius: 50%;
     -webkit-animation: loader 3s linear infinite;
-      -moz-animation: loader 2s linear infinite;
+    -moz-animation: loader 2s linear infinite;
     -o-animation: loader 2s linear infinite;
     animation: loader 3s linear infinite;
   }
   
   #loading-content:after {
     border: 3px solid transparent;
-    border-top-color: #84417C;
-    border-bottom-color: #84417C;
+    border-top-color: #00ccff;
+    border-bottom-color: #00ccff;
     border-radius: 50%;
     -webkit-animation: loader 1.5s linear infinite;
     animation: loader 1.5s linear infinite;
-      -moz-animation: loader 2s linear infinite;
+    -moz-animation: loader 2s linear infinite;
     -o-animation: loader 2s linear infinite;
   }
   
@@ -642,11 +647,11 @@ footer{
 }
 
 .contact-popup button:hover{
-    background: #FF014F;
+    background-image: linear-gradient(120deg ,#FF014F,#ff010e);
     color: #fff;
     transform: scale(1.05);
     transition-property: all;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
