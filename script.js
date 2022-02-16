@@ -202,3 +202,26 @@ $(document).ready(function(){
     $("#show-sidebar").show()
   });
 })
+
+
+//project popup 
+
+$(document).ready(function(){
+  $(".dic-card").click(()=>{
+    $('#popup-dic').show()
+  })
+
+  $(".ocym-card").click(()=>{
+    $('#popup-ocym').show()
+  })
+
+  $(".todo-card").click(()=>{
+    $('#popup-todo').show()
+  })
+
+  $('.close-btn').click(()=>{
+    $('#popup-dic').hide(),
+    $('#popup-ocym').hide(),
+    $('#popup-todo').hide()
+  })
+})

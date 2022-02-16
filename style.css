@@ -332,12 +332,13 @@ header{
     border-radius: 10px;
     background: var(--background-color);
     box-shadow:  var(--shadow);
+    cursor: pointer;
 }
 
 .cards-pro:hover img{
-    transform: scale(1.05);
+    transform: translate(0, -4px);
     transition-property: all;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
 
@@ -365,12 +366,14 @@ header{
 }
 
 .cards-pro #goto{
-    display: none;
+    opacity: 0;
     font-size: 18px;
+    color: #FF014F;
 }
 
 .cards-pro h5:hover #goto{
-    display: inline-block;
+    opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
 
@@ -753,6 +756,93 @@ footer .footer p{
     color: #fff;
     background: #ff014dc2;
 }
+
+/* project popup style */
+
+#popup-dic,#popup-ocym,#popup-todo{
+    display: none;
+}
+
+.project-popup{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: var(--bg-body);
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.project-popup .container{
+    margin-top: 60px;
+    border-radius: 15px;
+    padding: 3rem;
+    background-color: var(--bg-body);
+    box-shadow: var(--shadow);
+}
+
+.image-div img{
+    margin-bottom: 10px;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10px;
+}
+
+.prj-popup-contents{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: var(--font-color);
+}
+
+.prj-popup-contents h5{
+    color: #5F5F5F;
+}
+
+.prj-popup-contents h2{
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--font-color);
+    line-height: 68px;
+}
+
+.prj-popup-contents p{
+    margin-top: 1rem;
+}
+
+.view-prj-btn{
+    margin-top: 1rem;
+}
+
+
+.view-prj-btn button{
+    outline: none;
+    border: none;
+    background: var(--background-color);
+    box-shadow: var(--shadow);
+    color: #FF014F;
+    font-size: 17px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.view-prj-btn a{
+    color: #FF014F;
+}
+
+.view-prj-btn button:hover{
+    transform: translate(0, -5px);
+    background-color: var(--cards-hover-bg);
+}
+
+.view-prj-btn button:focus{
+    outline: none;
+}
+
+/* project popup style End */
 
 @media (max-width : 691px){
     .inner-popup{
