@@ -52,7 +52,7 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid var(--font-color)}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid var(--font-color)}";
     document.body.appendChild(css);
 };
 

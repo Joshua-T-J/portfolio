@@ -823,10 +823,13 @@ footer .footer p{
     font-size: 17px;
     padding: 15px 30px;
     border-radius: 10px;
-    margin-right: 25px;
     margin-top: 2rem;
     cursor: pointer;
     transition: all .3s ease-in-out;
+}
+
+.view-prj-btn button:nth-child(1){
+    margin-right: 25px;
 }
 
 .view-prj-btn a{
@@ -847,5 +850,14 @@ footer .footer p{
 @media (max-width : 691px){
     .inner-popup{
         width: 90%;
+    }
+
+    .project-popup .container{
+        padding: 1rem;
+    }
+}
+@media (max-width : 767px){
+    .prj-popup-contents h2,h5{
+        text-align: center;
     }
 }
