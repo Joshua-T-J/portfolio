@@ -450,6 +450,34 @@ footer{
     background-color: #ec0147d8;
 }
 
+#download{
+    text-align: center;
+    margin-top: 84px;
+}
+
+.download-resume button{
+    cursor: pointer;
+    font-size: 17px;
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    color: var(--font-color);
+    background: var(--background-color);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    width: 40%;
+}
+
+.download-resume button:focus{
+    outline: none;
+}
+
+.download-resume button:hover{
+    color: #fff;
+    background: #FF014F;
+}
+
 #contact-form{
     position: relative;
 }
