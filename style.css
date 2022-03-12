@@ -401,6 +401,7 @@ footer{
     padding: 25px 0;
     text-align: center;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .active,.resume-li:hover{    
@@ -458,7 +459,7 @@ footer{
 .download-resume button{
     cursor: pointer;
     font-size: 17px;
-    padding: 15px 25px;
+    padding: 15px 60px;
     outline: none;
     border: none;
     color: var(--font-color);
@@ -466,7 +467,6 @@ footer{
     box-shadow: var(--shadow);
     border-radius: 10px;
     transition: all .4s ease-in-out;
-    width: 40%;
 }
 
 .download-resume button:focus{
