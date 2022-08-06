@@ -211,6 +211,28 @@ header{
     font-size: 20px;
 }
 
+/* .thumbnail::before{
+    content: "";
+    height: calc(100% - 130px);
+    box-shadow: var(--shadow);
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: var(--background-color);
+    border-radius: 10px; 
+}
+
+.image-jtj{
+    text-align: center;
+}
+
+#profile-img{
+    margin-top: 100px;
+    filter: drop-shadow(10px 10px 19px #2c2929);
+}*/
+
 .cards-1{
     background-color: var(--bg-body);
     padding-top: 50px;
