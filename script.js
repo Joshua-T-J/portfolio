@@ -139,7 +139,7 @@ function scrollFunction() {
 $("#contact-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbyiKZHZFjZqnStPsv6KY-NlLlnLn5tPhCH8hfoq3MDfvP5ReEOLDcqN0368X7mUIkyS/exec",
+            url:"https://script.google.com/macros/s/AKfycbzNuMr_Kw6oph17cndytP6y_3G3VTfaoOsHI2-qU-f9uXb5wblToqQ4P1PR-4d6YZM/exec",
             data:$("#contact-form").serialize(),
             method:"post",
             beforeSend: function(){
