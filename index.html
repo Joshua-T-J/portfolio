@@ -1,132 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- scroll animation style -->
+    <link rel="stylesheet" type="text/css" href="scrollCue/scrollCue.css" />
     <!-- font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstrap style -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Portfolio - Joshua T J</title>
-</head>
-<body>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="150">
     <header class="container-fluid">
-
-        <div class="row top">
-            <div class="col-md-2 col-5">
-                <h2>Portfolio</h2>
-            </div>
-
-            <div class="col-md-10 col-7 my-auto top-bar">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
-                    <span class="ham-icon"><i class="fa-solid fa-bars"></i></span>
-                  </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav ml-auto nav-joshua">
-                        <li class="nav-item  ml-auto nav-btns">
-                          <a class="nav-link" href="#home">HOME </a>
-                        </li>
-                        <li class="nav-item ml-auto nav-btns">
-                          <a class="nav-link" href="#features">FEATURES</a>
-                        </li>
-                        <li class="nav-item ml-auto nav-btns">
-                          <a class="nav-link" href="#projects">PROJECTS</a>
-                        </li>
-                        <li class="nav-item ml-auto nav-btns">
-                          <a class="nav-link" href="#resume">RESUME</a>
-                        </li>
-                        <li class="nav-item ml-auto nav-btns">
-                          <a class="nav-link" href="#contact_form">CONTACT</a>
-                        </li>
-                        <li class="nav-item ml-auto nav-btns">
-                            <a class="nav-link" href="#footer">FOLLOW</a>
-                        </li>
-                        <!-- theme-switch button -->
-
-                        <li class="nav-item ml-auto p-2">
-                          <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                              <input type="checkbox" id="checkbox" />
-                              <div class="slider round"></div>
-                            </label>
-                            <span class="night"> &nbsp;<i class="fa-solid fa-cloud-moon"></i></span>
-                          </div>
-                        </li>
-
-                      </ul>
-                    </div>
-                  </nav>
-
-            </div>
+      <div class="row top">
+        <div class="col-md-2 col-5">
+          <a href="index.html"><img src="Images/logo.png" alt="" /></a>
+          <!-- <h2>Portfolio</h2> -->
         </div>
+
+        <div class="col-md-10 col-7 my-auto top-bar">
+          <nav class="navbar navbar-expand-lg navbar-portfolio">
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="outline: none; border: none"
+            >
+              <span class="ham-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto nav-joshua">
+                <li class="nav-item ml-auto nav-btns">
+                  <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item ml-auto nav-btns">
+                  <a class="nav-link" href="#features">FEATURES</a>
+                </li>
+                <li class="nav-item ml-auto nav-btns">
+                  <a class="nav-link" href="#projects">PROJECTS</a>
+                </li>
+                <li class="nav-item ml-auto nav-btns">
+                  <a class="nav-link" href="#resume">RESUME</a>
+                </li>
+                <li class="nav-item ml-auto nav-btns">
+                  <a class="nav-link" href="#contact_form">CONTACT</a>
+                </li>
+                <li class="nav-item ml-auto nav-btns">
+                  <a class="nav-link" href="#footer">FOLLOW</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
-    
+
     <section class="home" id="home">
       <div class="container">
         <div class="row">
-            <div class="col-md-8 col-12 home-content">
-                <p>WELCOME TO MY WORLD</p>
-                <h1 style="text-align: left;">Hi, I’m <span class="name">Joshua T J</span></h1>
-                <!-- <h2>a Front-end Developer</h2> -->
-                <h2>
-                  <span class="typewrite" data-period="2000" data-type='[ "a Front-end Developer.", "I Love Design.", "I Love Photography" ]'>
-                    <span class="wrap"></span>
-                  </span>
-                </h2>
+          <div class="col-md-8 col-12 home-content">
+            <p>WELCOME TO MY WORLD</p>
+            <h1 style="text-align: left">
+              Hi, I’m <span class="name">Joshua T J</span>
+            </h1>
+            <h2>
+              <span
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "A Front-end Developer","And a Photographer." , "I Adore Exploring New Things."]'
+              >
+                <span class="wrap"></span>
+              </span>
+            </h2>
 
-                <p class="myself" id="follow">
-                  Self-motivated, highly passionate and hardworking fresher looking for an opportunity to work in a challenging organization
-                  to utilize my skills and knowledge to work for the growth of the organization.
-                  Eager to learn new technologies and methodologies.
-                </p>
-                <div class="home-bottom d-flex flex-row justify-content-between flex-wrap">
-                  <div class="home-icon icon1">
-                    <div class="icons social">
-                      <p>FIND WITH ME</p>
-                      <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"><i class="fab fa-linkedin-in"></i></a>
-                      <a href="https://github.com/Joshua-T-J"><i class="fab fa-github"></i></a>
-                      <a href="https://www.instagram.com/_joshua_t_j/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                  </div>
-                  <div class="home-icon icon2 d-flex flex-row justify-content-between flex-wrap">
-                    <div class="icons">
-                      <p>BEST SKILL ON</p>
-                      <i class="fab fa-html5"></i>
-                      <i class="fab fa-css3-alt"></i>
-                      <i class="fab fa-js"></i>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- <div class="col-md-4 col-12">
-              <div class="thumbnail">
-                <div class="image-jtj">
-                  <img id="profile-img" src="" class="img-fluid" alt="photo">
+            <p class="myself" id="follow">
+              Self-motivated, highly passionate and hardworking fresher looking
+              for an opportunity to work in a challenging organization to
+              utilize my skills and knowledge to work for the growth of the
+              organization. Eager to learn new technologies and methodologies.
+            </p>
+            <div
+              class="home-bottom d-flex flex-row justify-content-between flex-wrap"
+            >
+              <div class="home-icon icon1">
+                <div class="icons social">
+                  <p>FIND WITH ME</p>
+                  <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://github.com/Joshua-T-J"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://www.instagram.com/joshua.t_j/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </div>
               </div>
-           </div> -->
+              <div
+                class="home-icon icon2 d-flex flex-row justify-content-between flex-wrap"
+              >
+                <div class="icons">
+                  <p>BEST SKILL ON</p>
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 profile-img-container">
+            <div class="thumbnail">
+              <img
+                id="profile-img"
+                src="Images/profile.png"
+                class="mx-auto"
+                alt="photo"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cards-1" id="features">
-      <div class="container">
+      <div class="container" data-cues="slideInUp">
         <h6>FEATURES</h6>
         <h1>What I Do</h1>
-        <div class="row">
+        <div class="row" data-cues="slideInUp">
           <div class="col-md-4 card-main">
             <div class="cards">
-              <i class="fas fa-globe card-elements"></i>
+              <i class="fa-solid fa-code card-elements"></i>
               <h5 class="card-elements">Front-end Development</h5>
-              <p class="card-elements"> “There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for”</p>
+              <p class="card-elements">
+                “There are three responses to a piece of design – yes, no, and
+                WOW! Wow is the one to aim for”
+              </p>
             </div>
           </div>
 
@@ -134,7 +169,10 @@
             <div class="cards">
               <i class="fas fa-camera card-elements"></i>
               <h5 class="card-elements">Photography</h5>
-              <p class="card-elements">“The photo that you took with your camera is the imagination you want to create with reality.”</p>
+              <p class="card-elements">
+                “The photo that you took with your camera is the imagination you
+                want to create with reality.”
+              </p>
             </div>
           </div>
 
@@ -142,46 +180,77 @@
             <div class="cards">
               <i class="fas fa-edit card-elements"></i>
               <h5 class="card-elements">Editing</h5>
-              <p class="card-elements">“The world always seems brighter when you’ve just made something that wasn’t there before.”</p>
+              <p class="card-elements">
+                “The world always seems brighter when you’ve just made something
+                that wasn’t there before.”
+              </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <section class="projects" id="projects">
-      <div class="container">
+      <div class="container" data-cues="slideInUp">
         <h6>PROJECTS</h6>
         <h1>PROJECTS DONE</h1>
-        <div class="row">
+        <div class="row" data-cues="slideInUp">
           <div class="col-md-4 card-main">
-              <div class="cards-pro dic-card">
-                <img class="img-fluid img-thumbnail" src="./Images/hsu.png" alt="">
-                <p class="prj-name">WEB-APPLICATION</p>
-                <h5 class="card-elements projects-h5">HSU WAGE CALCULATOR&nbsp;<span id="goto"><i class="fa-solid fa-square-arrow-up-right"></i></span> </h5>
-                <p class="card-elements"></p>
+            <div class="cards-pro dic-card">
+              <div class="prj-img-container">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="./Images/hsu.png"
+                  alt=""
+                />
               </div>
+              <p class="prj-name">WEB-APPLICATION</p>
+              <h5 class="card-elements projects-h5">
+                HSU WAGE CALCULATOR&nbsp;<span id="goto"
+                  ><i class="fa-solid fa-square-arrow-up-right"></i
+                ></span>
+              </h5>
+              <p class="card-elements"></p>
+            </div>
           </div>
 
           <div class="col-md-4 card-main">
-              <div class="cards-pro ocym-card">
-                <img class="img-fluid img-thumbnail" src="./Images/ocym.webp" alt="">
-                <p class="prj-name">STATIC WEBSITE</p>
-                <h5 class="card-elements projects-h5">OCYM WEBSITE&nbsp;<span id="goto"><i class="fa-solid fa-square-arrow-up-right"></i></span></h5>
-                <p class="card-elements"></p>
+            <div class="cards-pro ocym-card">
+              <div class="prj-img-container">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="./Images/ocym.webp"
+                  alt=""
+                />
               </div>
+              <p class="prj-name">STATIC WEBSITE</p>
+              <h5 class="card-elements projects-h5">
+                OCYM WEBSITE&nbsp;<span id="goto"
+                  ><i class="fa-solid fa-square-arrow-up-right"></i
+                ></span>
+              </h5>
+              <p class="card-elements"></p>
+            </div>
           </div>
 
           <div class="col-md-4 card-main">
-              <div class="cards-pro todo-card">
-                <img class="img-fluid img-thumbnail" src="./Images/Todo.webp" alt="">
-                <p class="prj-name">REACT APP</p>
-                <h5 class="card-elements projects-h5">TODO APP&nbsp;<span id="goto"><i class="fa-solid fa-square-arrow-up-right"></i></span></h5>
-                <p class="card-elements"></p>
+            <div class="cards-pro todo-card">
+              <div class="prj-img-container">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="./Images/Todo.webp"
+                  alt=""
+                />
               </div>
+              <p class="prj-name">REACT APP</p>
+              <h5 class="card-elements projects-h5">
+                TODO APP&nbsp;<span id="goto"
+                  ><i class="fa-solid fa-square-arrow-up-right"></i
+                ></span>
+              </h5>
+              <p class="card-elements"></p>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -193,24 +262,33 @@
         <div class="row">
           <div class="col-md-5">
             <div class="image-div text-center">
-              <img class="img-fluid" src="./Images/hsu-lg.png" alt="">
+              <img class="img-fluid" src="./Images/hsu-lg.png" alt="" />
             </div>
           </div>
           <div class="col-md-7">
             <div class="prj-popup-contents">
               <h5>Project - Web-Application</h5>
               <h2>HSU WAGE CALCULATOR</h2>
-              <p>Project for calculating wages of the workers in HSU(Handloom School Uniform) Societies,
-                Under the District Industry Center ,Kollam <br> <br> 
-                This is a Project with HTML,CSS,Javascript in Front-end and Node.js is used
-                as the Backend Language. Database used is Mongo DB</p>
+              <p>
+                Project for calculating wages of the workers in HSU(Handloom
+                School Uniform) Societies, Under the District Industry Center
+                ,Kollam <br />
+                <br />
+                This is a Project with HTML,CSS,Javascript in Front-end and
+                Node.js is used as the Backend Language. Database used is Mongo
+                DB
+              </p>
             </div>
 
             <div class="view-prj-btn">
               <a href="https://dic-project.github.io/DIC-FRONT_END/index.html">
-                <button>View Project &nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                <button>
+                  View Project &nbsp;<i class="fa-solid fa-angle-right"></i>
+                </button>
               </a>
-              <button class="close-btn">Close &nbsp;<i class="fa-solid fa-xmark"></i></button>
+              <button class="close-btn">
+                Close &nbsp;<i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -222,24 +300,32 @@
         <div class="row">
           <div class="col-md-5">
             <div class="image-div text-center">
-              <img class="img-fluid" src="./Images/ocym-lg.png" alt="">
+              <img class="img-fluid" src="./Images/ocym-lg.png" alt="" />
             </div>
           </div>
           <div class="col-md-7">
             <div class="prj-popup-contents">
               <h5>Project - Static Website</h5>
               <h2>OCYM WEBSITE</h2>
-              <p>A Website developed for the OCYM(Orthodox Christian Youth Movement) 
-                of St Stephen's Orthodox Church, Pandithitta, Kollam <br> <br> 
-                This is a Responsive static website developed with the help of HTML, CSS, Javascript and Bootstrap
-                Framework</p>
+              <p>
+                A Website developed for the OCYM(Orthodox Christian Youth
+                Movement) of St Stephen's Orthodox Church, Pandithitta, Kollam
+                <br />
+                <br />
+                This is a Responsive static website developed with the help of
+                HTML, CSS, Javascript and Bootstrap Framework
+              </p>
             </div>
 
             <div class="view-prj-btn">
               <a href="https://joshua-t-j.github.io/ocym-website/">
-                <button>View Project &nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                <button>
+                  View Project &nbsp;<i class="fa-solid fa-angle-right"></i>
+                </button>
               </a>
-              <button class="close-btn">Close &nbsp;<i class="fa-solid fa-xmark"></i></button>
+              <button class="close-btn">
+                Close &nbsp;<i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -251,23 +337,31 @@
         <div class="row">
           <div class="col-md-5">
             <div class="image-div text-center">
-              <img class="img-fluid" src="./Images/todo-lg.png" alt="">
+              <img class="img-fluid" src="./Images/todo-lg.png" alt="" />
             </div>
           </div>
           <div class="col-md-7">
-            <div class="prj-popup-contents">  
+            <div class="prj-popup-contents">
               <h5>Project - React App</h5>
               <h2>TODO APP</h2>
-              <p>A ToDo App developed to Create and Organize all your work in one place and access them from anywhere.<br> <br> 
-                A project developed with the help of React.js Framework to store and organize 
-                all the work of an individual and access them.</p>
+              <p>
+                A ToDo App developed to Create and Organize all your work in one
+                place and access them from anywhere.<br />
+                <br />
+                A project developed with the help of React.js Framework to store
+                and organize all the work of an individual and access them.
+              </p>
             </div>
 
             <div class="view-prj-btn">
               <a href="https://joshua-t-j.github.io/todoapp/">
-                <button>View Project &nbsp;<i class="fa-solid fa-angle-right"></i></button>
+                <button>
+                  View Project &nbsp;<i class="fa-solid fa-angle-right"></i>
+                </button>
               </a>
-              <button class="close-btn">Close &nbsp;<i class="fa-solid fa-xmark"></i></button>
+              <button class="close-btn">
+                Close &nbsp;<i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -277,9 +371,9 @@
     <!-- project popup -->
 
     <section class="resume" id="resume">
-      <div class="container">
+      <div class="container" data-cues="slideInUp">
         <h6>ABOUT ME</h6>
-        <h1> RESUME</h1>
+        <h1>RESUME</h1>
         <div class="row">
           <div class="col-md-12">
             <nav class="navbar navbar-expand-md navbar-light">
@@ -288,215 +382,445 @@
                   <li class="nav-item resume-li edu active col-md-3">
                     EDUCATION
                   </li>
-                  <li class="nav-item resume-li ski col-md-3">
-                    SKILLS
-                  </li>
+                  <li class="nav-item resume-li ski col-md-3">SKILLS</li>
                   <li class="nav-item resume-li cer col-md-3">
                     CERTIFICATIONS
                   </li>
-                  <li class="nav-item resume-li more col-md-3">
-                    MORE
-                  </li>
+                  <li class="nav-item resume-li more col-md-3">MORE</li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
-        
+
         <!-- resume educational qualification details -->
 
         <div class="resume-details" id="education">
           <h5>EDUCATIONAL QUALIFICATION</h5>
-          <div class="row ">
-              <div class="col-md-6">
-                <div class="resume-card">
-                  <p>B.TECH, COMPUTER SCIENCE & ENGINEERING</p>
-                  <p>APJ Abdul Kalam Technological University (2018-2022)</p>
-                  <p>BASELIOS MATHEWS II COLLEGE OF ENGINEERING, SASTHAMCOTTA</p>
-                  <p>CGPA &nbsp; 7.65</p>
-                </div>
-              </div>    
-              <div class="col-md-6">
-                <div class="resume-card">
-                  <p>PLUS TWO</p>
-                  <p>Kerala Higher Secondary Examination Board (2018)</p>
-                  <p>G H S S PATTAZHY</p>
-                  <p>Percentage &nbsp; 84.5%</p>
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>B.TECH, COMPUTER SCIENCE & ENGINEERING</p>
+                <p>APJ Abdul Kalam Technological University (2018-2022)</p>
+                <p>BASELIOS MATHEWS II COLLEGE OF ENGINEERING, SASTHAMCOTTA</p>
+                <p>CGPA &nbsp; 7.65</p>
               </div>
             </div>
-            
-            <div class="row ">
-              <div class="col-md-6">
-                <div class="resume-card">
-                  <p>SSLC</p>
-                  <p>Kerala Board of Public Examination (2016)</p>
-                  <p>G H S S PATTAZHY</p>
-                  <p>Percentage &nbsp;96.6%</p>
-                </div>
-              </div> 
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>PLUS TWO</p>
+                <p>Kerala Higher Secondary Examination Board (2018)</p>
+                <p>G H S S PATTAZHY</p>
+                <p>Percentage &nbsp; 84.5%</p>
+              </div>
             </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>SSLC</p>
+                <p>Kerala Board of Public Examination (2016)</p>
+                <p>G H S S PATTAZHY</p>
+                <p>Percentage &nbsp;96.6%</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- resume Professional skills details -->
 
         <div class="resume-details education" id="skills">
           <h5>PROFESSIONAL SKILLS</h5>
-          <div class="row ">
-              <div class="col-md-6">
-                <div class="resume-card">
-                  <p>Technical Skills</p>
-                  <label for="html-progress">HTML</label>
-                  <div class="progress" style="height: 12px;">
-                    <div class="progress-bar" id="html-progress" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                  </div>
-                  <label for="css-progress">CSS</label>
-                  <div class="progress" style="height: 12px;">
-                    <div class="progress-bar" id="css-progress" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                  </div>
-                  <label for="js-progress">Javascript</label>
-                  <div class="progress" style="height: 12px;">
-                    <div class="progress-bar" id="js-progress" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                  </div>
-                </div>
-              </div>    
-              <div class="col-md-6">
-                <div class="resume-card">
-                  <p>Other Skills</p>
-                  <label for="html-progress">Photography</label>
-                  <div class="progress" style="height: 12px;">
-                    <div class="progress-bar" id="html-progress" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                  </div>
-                  <label for="css-progress">Videography</label>
-                  <div class="progress" style="height: 12px;">
-                    <div class="progress-bar" id="css-progress" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                  </div>
-                  <label for="js-progress">Editing</label>
-                  <div class="progress" style="height: 12px;">
-                    <div class="progress-bar" id="js-progress" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>Technical Skills</p>
+                <label for="html-progress">HTML</label>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar"
+                    id="html-progress"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
                   </div>
                 </div>
-              </div>
-            </div>   
-          </div>
-
-          <!-- certification -->
-
-          <div class="resume-details" id="certification">
-            <h5>CERTIFICATIONS</h5>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="resume-card">
-                    <p>Learning Web Development from Scratch: The Ultimate Bootcamp</p>
-                    <p>Conducted by :&nbsp; Eduonix</p>
-                    <p>27 January 2022</p>
+                <label for="css-progress">CSS</label>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar"
+                    id="css-progress"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    75%
+                  </div>
+                </div>
+                <label for="js-progress">Javascript</label>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar"
+                    id="js-progress"
+                    role="progressbar"
+                    style="width: 70%"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    70%
                   </div>
                 </div>
               </div>
-          </div>
-
-          <!-- more -->
-
-          <div class="resume-details" id="more">
-            <h5>MORE ABOUT ME</h5>
-            <div class="row ">
-                <div class="col-md-6">
-                  <div class="resume-card">
-                    <p>HOBBIES</p>
-                    <p>Watching films</p>
-                    <p>Listening music</p>
-                    <p>Photography</p>
+            </div>
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>Other Skills</p>
+                <label for="html-progress">Photography</label>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar"
+                    id="html-progress"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    90%
                   </div>
-                </div>    
-                <div class="col-md-6">
-                  <div class="resume-card">
-                    <p>STRENGTH</p>
-                    <p>Flexible and adaptable</p>
-                    <p>Ambitious</p>
-                    <p>Loyal and Patience</p>
+                </div>
+                <label for="css-progress">Videography</label>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar"
+                    id="css-progress"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    80%
+                  </div>
+                </div>
+                <label for="js-progress">Editing</label>
+                <div class="progress" style="height: 12px">
+                  <div
+                    class="progress-bar"
+                    id="js-progress"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    90%
                   </div>
                 </div>
               </div>
-          </div>
-
-          <div class="row" id="download">
-            <div class="col-12">
-              <a href="./Doc/Joshua T J Resume.pdf" download class="download-resume">
-                <button>Download Full Resume &nbsp;<i class="fa-solid fa-arrow-down"></i></button>
-              </a>
             </div>
           </div>
+        </div>
 
+        <!-- certification -->
+
+        <div class="resume-details" id="certification">
+          <h5>CERTIFICATIONS</h5>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>
+                  Learning Web Development from Scratch: The Ultimate Bootcamp
+                </p>
+                <p>Conducted by :&nbsp; Eduonix</p>
+                <p>27 January 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- more -->
+
+        <div class="resume-details" id="more">
+          <h5>MORE ABOUT ME</h5>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>HOBBIES</p>
+                <p>Watching films</p>
+                <p>Listening music</p>
+                <p>Photography</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="resume-card">
+                <p>STRENGTH</p>
+                <p>Flexible and adaptable</p>
+                <p>Ambitious</p>
+                <p>Loyal and Patience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="download">
+          <div class="col-12">
+            <a
+              href="./Doc/Joshua T J Resume.pdf"
+              download
+              class="download-resume"
+            >
+              <button>
+                Download Resume &nbsp;<i
+                  class="fa-solid fa-file-arrow-down"
+                ></i>
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact_form">
-      <div class="container">
+      <div class="container" data-cues="slideInUp">
         <h6>CONTACT</h6>
         <h1>CONTACT WITH ME</h1>
-        <div class="row ">
-          <div class="col-md-4 address">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 address">
             <h4>Reach Me</h4>
-            <p class="reach-me"><span><i class="fas fa-mobile-alt"></i></span> &nbsp; +91 8921233481</p>
-            <p class="reach-me"><span><i class="far fa-envelope"></i></span> &nbsp;joshuajose312@gmail.com</p>
-            <p class="reach-me"><span><i class="fas fa-map-marker-alt"></i></span> &nbsp; THADATHIVILA VEEDU,<br>Pandithitta,Thalavoor,<br> Kollam, Kerala <br> Pin : 691508 </p>
+            <p class="reach-me">
+              Just fill the form to start a discussion with me on how we can
+              work together. <br />
+              <br />
+              Don't want to fill the form? you can just e-mail me.
+            </p>
+            <p class="reach-me">
+              <a href="tel:+918921233481"
+                ><span><i class="fas fa-mobile-alt"></i></span> +91
+                8921233481</a
+              >
+            </p>
+            <p class="reach-me">
+              <a href="mailto:joshuajose312@gmail.com"
+                ><span><i class="far fa-envelope"></i></span>
+                joshuajose312@gmail.com</a
+              >
+            </p>
             <div class="home-icon icon1">
-              <p style="color: #5f5f5f;">FIND WITH ME</p>
+              <p style="color: #5f5f5f">FIND WITH ME</p>
               <div class="icons social">
-                <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Joshua-T-J"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/_joshua_t_j/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/Joshua-T-J"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.instagram.com/joshua.t_j/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </div>
             </div>
           </div>
-          <div class="col-md-8" >
-              <div class="card p-4 " id="contact-div">
-                  <div class="card-body">
-                      
-                          <form id="contact-form" action="">
-                              <div class="controls">
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                          <div class="form-group"> <label for="form-name">Name :</label> <input id="form_name" minlength="3" type="text" name="Name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required."> </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                          <div class="form-group"> <label for="form_mobile">Phone No :</label> <input id="form_mobile"  type="tel" name="Mobile" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Phone number is required." > </div>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                          <div class="form-group"> <label for="form-email">E-mail :</label> <input id="form_email" type="email" name="Email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group"> <label for="form-subject">Subject :</label> <input id="form_subject" type="text" name="Subject" class="form-control" placeholder="Please specify the subject *" required="required"> </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          <div class="form-group"> <label for="form_message">Message :</label> <textarea id="form_message" name="Message" class="form-control" placeholder="Write your message here *" rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
-                                      </div>
-                                      <div class="col-md-12" style="margin-top: 10px;"> <input type="submit" class="btn btn-send pt-2 btn-block " value="Send Message"></div>
-                                  </div>
-                              </div>
-                          </form>
+          <div class="col-lg-8 col-md-7">
+            <div class="card p-4" id="contact-div">
+              <div class="card-body">
+                <form id="contact-form" action="">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form-name">Name :</label>
+                          <input
+                            id="form_name"
+                            minlength="3"
+                            type="text"
+                            name="Name"
+                            class="form-control"
+                            placeholder="Please enter your name *"
+                            required="required"
+                            data-error="Firstname is required."
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_mobile">Phone No :</label>
+                          <input
+                            id="form_mobile"
+                            type="tel"
+                            name="Mobile"
+                            class="form-control"
+                            placeholder="+91 888 888 8888 *"
+                            required="required"
+                            data-error="Phone number is required."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form-email">E-mail :</label>
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="Email"
+                            class="form-control"
+                            placeholder="you@example.com *"
+                            required="required"
+                            data-error="Valid email is required."
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form-subject">Subject :</label>
+                          <input
+                            id="form_subject"
+                            type="text"
+                            name="Subject"
+                            class="form-control"
+                            placeholder="Please specify the subject *"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message">Message :</label>
+                          <textarea
+                            id="form_message"
+                            name="Message"
+                            class="form-control"
+                            placeholder="Write your message here *"
+                            rows="4"
+                            required="required"
+                            data-error="Please, leave us a message."
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style="margin-top: 10px">
+                        <button
+                          type="submit"
+                          class="btn btn-send pt-2 btn-block"
+                        >
+                          Send Message &nbsp;
+                          <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-              </div> <!-- /.8 -->
-          </div> <!-- /.row-->
-      </div>  
+                </form>
+              </div>
+            </div>
+            <!-- /.8 -->
+          </div>
+          <!-- /.row-->
+        </div>
       </div>
     </section>
 
     <footer id="footer">
       <div class="container-fluid footer">
         <div class="row">
-          <div class="col-12"><p>Want to get in Touch? I'd Love to hear from you.<br>Here's how you can reach me.</p></div>
+          <div class="col-12">
+            <img src="Images/logo.png" alt="Logo" />
+          </div>
+          <div class="col-12 footer-list">
+            <ul>
+              <li class="d-md-inline d-none p-2">
+                <a href="#home">Home</a>
+              </li>
+              <li class="d-md-inline d-none p-2">
+                <a href="#features">Features</a>
+              </li>
+              <li class="d-md-inline d-none p-2">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="d-md-inline d-none p-2">
+                <a href="#resume">Resume</a>
+              </li>
+              <li class="d-md-inline d-none p-2">
+                <a href="#contact_form">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-list-container">
+          <div class="col-md-3 offset-lg-1 footer-list">
+            <h6>Hello there!</h6>
+            <p>
+              Want to get in Touch? I'd Love to hear from you. Here's how you
+              can reach me.
+            </p>
+          </div>
+          <div class="col-md-5 offset-lg-1 footer-list">
+            <h6>Contact</h6>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Thadathivila Veedu,
+                Pandithitta
+              </li>
+              <li>&nbsp;&nbsp;&nbsp; Thalavoor, Kollam, Kerala</li>
+              <li>
+                <a href="tel:+918921233481"
+                  ><i class="fas fa-mobile-alt"></i> +91 8921233481</a
+                >
+              </li>
+              <li>
+                <a href="mailto:joshuajose312@gmail.com">
+                  <i class="far fa-envelope"></i> joshuajose312@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-list">
+            <h6>Services</h6>
+            <ul>
+              <li><a href="">Frontend</a></li>
+              <li>
+                <a href="https://jtjcreations.netlify.app/">Photography</a>
+              </li>
+              <li><a href="https://jtjcreations.netlify.app/">Editing</a></li>
+            </ul>
+          </div>
         </div>
         <div class="row">
+          <div class="col-12 footer-icons-container">
+            <span>Stay Connected</span>
+            <a href="https://www.instagram.com/joshua.t_j/" class="footer-icons"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"
+              class="footer-icons"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:joshuajose312@gmail.com" class="footer-icons"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="index.html" class="footer-icons"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+          </div>
           <div class="col-12">
-            <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/" class="footer-icons"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/_joshua_t_j/" class="footer-icons"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:joshuajose312@gmail.com" class="footer-icons"><i class="fa-solid fa-envelope"></i></a> <br><br>
-            <p>&copy; 2022.All rights reserved.</p>
+            <p class="copyright-text">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | Joshua T J
+            </p>
           </div>
         </div>
       </div>
@@ -506,15 +830,21 @@
 
     <div class="contact-popup" id="message-popup">
       <div class="inner-popup">
-        <h4>Message Send Successfully!<br></h4>
+        <h4>Message Send Successfully!<br /></h4>
         <p>Thankyou For Your Feedback.</p>
-        <br>
+        <br />
         <div class="home-icon icon1">
-          <p style="color: #5f5f5f;">FOLLOW ON</p>
+          <p style="color: #5f5f5f">FOLLOW ON</p>
           <div class="icons social">
-            <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Joshua-T-J"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/_joshua_t_j/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/Joshua-T-J"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/joshua.t_j/"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
         <button id="reload">OK</button>
@@ -531,59 +861,96 @@
     <!-- side social-bar -->
 
     <div class="side-bar" id="side-bar">
-      <div class="social-bar flex-column justify-content-between flex-wrap" id="icon-side">
-        <div class="toggle-side" id="hide-sidebar">
+      <div
+        class="social-bar flex-column justify-content-between flex-wrap"
+        id="icon-side"
+      >
+        <div class="toggle-side" id="hide-sidebar" title="Hide">
           <i class="fa-solid fa-angle-left"></i>
         </div>
-        <a href="https://www.linkedin.com/in/joshua-t-j-68121b22a/">
+
+        <div class="theme-switch-wrapper side-bar-icon">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <i class="fa-solid fa-moon" title="Dark Mode" id="moon"></i>
+            <i class="fa-solid fa-sun" title="Light Mode" id="sun"></i>
+          </label>
+        </div>
+
+        <a
+          href="https://www.linkedin.com/in/joshua-t-j-68121b22a/"
+          title="LinkedIn"
+        >
           <div class="side-bar-icon">
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </a>
-        <a href="https://github.com/Joshua-T-J">
+        <a href="https://github.com/Joshua-T-J" title="GitHub">
           <div class="side-bar-icon">
             <i class="fa-brands fa-github"></i>
           </div>
         </a>
-        <a href="https://www.instagram.com/_joshua_t_j/">
+        <a href="https://www.instagram.com/joshua.t_j/" title="Instagram">
           <div class="side-bar-icon">
             <i class="fa-brands fa-instagram"></i>
           </div>
         </a>
-        <a href="mailto:joshuajose312@gmail.com">
+        <a href="mailto:joshuajose312@gmail.com" title="E-mail">
           <div class="side-bar-icon">
             <i class="fa-solid fa-envelope"></i>
           </div>
-        </a> 
+        </a>
       </div>
-      <div class="toggle-side" id="show-sidebar">
+      <div class="toggle-side" id="show-sidebar" title="Expand">
         <i class="fa-solid fa-angle-right"></i>
       </div>
     </div>
-    
+
     <!-- goto top arrow button -->
 
-    <div class="up-arrow" id="goto-top">
-      <a href="#home"><button class="btn"><i class="fas fa-arrow-up"></i></button></a>
+    <div class="up-arrow" id="goto-top" title="Go to Top">
+      <a href="#home"
+        ><button class="btn"><i class="fas fa-arrow-up"></i></button
+      ></a>
     </div>
-    
- <!-- bootstrap javascript -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
- integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
- crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
- integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
- crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
- integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
- crossorigin="anonymous"></script>  
- <!-- jquery -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="./script.js"></script>
+    <!-- bootstrap javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- contact form script -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- scroll animation script -->
+    <script src="scrollCue/scrollCue.min.js" type="text/javascript"></script>
+    <script>
+      scrollCue.init();
+    </script>
 
-</body>
+    <script src="./script.js"></script>
+
+    <!-- contact form script -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
