@@ -84,30 +84,6 @@ $(document).ready(function () {
     $('.ski').click(function () {
       $('#education, #certification, #more').hide();
       $('#skills').show();
-
-      // progress-bar animation
-
-      var delay = 500;
-      $('.progress-bar').each(function (i) {
-        $(this)
-          .delay(delay * i)
-          .animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
-
-        $(this)
-          .prop('Counter', 0)
-          .animate(
-            {
-              Counter: $(this).text(),
-            },
-            {
-              duration: delay,
-              easing: 'swing',
-              step: function (now) {
-                $(this).text(Math.ceil(now) + '%');
-              },
-            }
-          );
-      });
     }),
     //   Click reveal for Certifications
     $('.cer').click(function () {
@@ -121,28 +97,28 @@ $(document).ready(function () {
     });
 });
 
-// scroll to top button
-//Get the button
-var mybutton = document.getElementById('goto-top');
-var sidediv = document.getElementById('side-bar');
+//scrollprogress on goto top button
 
-// When the user scrolls down 700px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 700 ||
-    document.documentElement.scrollTop > 700
-  ) {
-    mybutton.style.display = 'block';
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById('goto-top');
+  let sidediv = document.getElementById('side-bar');
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 600) {
+    scrollProgress.style.display = 'grid';
     sidediv.style.display = 'block';
   } else {
-    mybutton.style.display = 'none';
+    scrollProgress.style.display = 'none';
     sidediv.style.display = 'none';
   }
-}
+  scrollProgress.style.background = `conic-gradient(var(--clr-primary) ${scrollValue}%, var(--bg-body) ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
 
 // contact form script
 
