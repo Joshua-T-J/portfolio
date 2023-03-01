@@ -502,6 +502,33 @@ header {
   color: var(--font-color);
 }
 
+#contact-form .error-span {
+  color: var(--clr-error);
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.error-span i {
+  position: absolute;
+  top: min(45px, 50%);
+  right: 8%;
+}
+
+textarea + .error-span i {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#submit-btn + .error-span {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  textarea + .error-span i {
+    right: 5%;
+  }
+}
+
 /* message sending animation */
 
 #loading-wrapper {

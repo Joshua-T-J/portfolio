@@ -640,14 +640,14 @@
                           <label for="form-name">Name :</label>
                           <input
                             id="form_name"
-                            minlength="3"
                             type="text"
                             name="Name"
                             class="form-control"
                             placeholder="Please enter your name *"
                             required="required"
-                            data-error="Firstname is required."
+                            onkeyup="validateName()"
                           />
+                          <span class="error-span" id="name-error"></span>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -660,8 +660,9 @@
                             class="form-control"
                             placeholder="+91 888 888 8888 *"
                             required="required"
-                            data-error="Phone number is required."
+                            onkeyup="validateMobile()"
                           />
+                          <span class="error-span" id="mobile-error"></span>
                         </div>
                       </div>
                     </div>
@@ -677,7 +678,9 @@
                             placeholder="you@example.com *"
                             required="required"
                             data-error="Valid email is required."
+                            onkeyup="validateEmail()"
                           />
+                          <span class="error-span" id="email-error"></span>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -690,7 +693,9 @@
                             class="form-control"
                             placeholder="Please specify the subject *"
                             required="required"
+                            onkeyup="validateSubject()"
                           />
+                          <span class="error-span" id="subject-error"></span>
                         </div>
                       </div>
                     </div>
@@ -705,18 +710,25 @@
                             placeholder="Write your message here *"
                             rows="4"
                             required="required"
-                            data-error="Please, leave us a message."
+                            onkeyup="validateMessage()"
                           ></textarea>
+                          <span class="error-span" id="message-error"></span>
                         </div>
                       </div>
                       <div class="col-md-12" style="margin-top: 10px">
                         <button
                           type="submit"
                           class="btn btn-send pt-2 btn-block"
+                          id="submit-btn"
+                          onclick="return validateSubmit()"
                         >
                           Send Message &nbsp;
                           <i class="fa-regular fa-paper-plane"></i>
                         </button>
+                        <span
+                          class="error-span text-center"
+                          id="submit-error"
+                        ></span>
                       </div>
                     </div>
                   </div>
@@ -941,7 +953,9 @@
       scrollCue.init();
     </script>
 
-    <script src="./script.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/contactValidation.js"></script>
 
     <!-- contact form script -->
     <script

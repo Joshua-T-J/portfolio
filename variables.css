@@ -9,6 +9,7 @@
   --cards-hover-bg: linear-gradient(145deg, #dce5eb, #f0f0f0);
   --clr-primary: #ff014f;
   --clr-footer: #dbe3e9;
+  --clr-error: #d8000c;
 }
 
 [data-theme='dark'] {
