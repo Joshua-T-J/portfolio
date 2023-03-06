@@ -57,6 +57,7 @@ window.onload = function () {
   css.innerHTML =
     '.typewrite > .wrap { border-right: 0.1em solid var(--font-color)}';
   document.body.appendChild(css);
+  calcScrollValue();
 };
 
 //nav active toggle
@@ -118,7 +119,7 @@ let calcScrollValue = () => {
 };
 
 window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+// window.onload = calcScrollValue;
 
 // contact form script
 
